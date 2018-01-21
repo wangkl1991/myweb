@@ -3,18 +3,24 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { UserloginComponent } from './auth/userlogin/userlogin.component';
 import { AuthComponent } from './auth/auth.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+
+//Routes
+import { AppRoutingModule } from './app.routing';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserloginComponent,
-    AuthComponent
+    AuthComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
