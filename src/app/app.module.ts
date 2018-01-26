@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { AuthComponent } from './auth/auth.component';
 
 
 import { UserComponent } from './user/user.component';
@@ -21,8 +20,13 @@ import { AuthModule } from './auth/auth.module';
 
 //Services
 import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
-import { DygridDirective } from './shared/directives/dygrid.directive';
 import { DyGridComponent } from './shared/componenes/dy-grid/dy-grid.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material';
+import { MaterialModule } from './shared/modules/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -32,11 +36,9 @@ import { DyGridComponent } from './shared/componenes/dy-grid/dy-grid.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
     HeaderComponent,
     FooterComponent,
     UserComponent,
-    DygridDirective,
     DyGridComponent,
     
   ],
@@ -45,7 +47,15 @@ import { DyGridComponent } from './shared/componenes/dy-grid/dy-grid.component';
     AppRoutingModule,
     UserModule,
     HomeModule,
-    AuthModule
+    AuthModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
+    MaterialModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
   ],
   providers: [AuthGuardGuard],
   bootstrap: [AppComponent]
