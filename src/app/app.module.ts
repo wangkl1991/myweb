@@ -21,6 +21,8 @@ import { AuthModule } from './auth/auth.module';
 
 //Services
 import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
+import { DygridDirective } from './shared/directives/dygrid.directive';
+import { DyGridComponent } from './shared/componenes/dy-grid/dy-grid.component';
 
 
 
@@ -34,6 +36,8 @@ import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
     HeaderComponent,
     FooterComponent,
     UserComponent,
+    DygridDirective,
+    DyGridComponent,
     
   ],
   imports: [
