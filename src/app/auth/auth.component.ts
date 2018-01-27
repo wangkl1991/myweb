@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
-
+  displayTab = 'signin';
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+ 
+  ChangeTab(event){
+    if(event.index == 0){
+      this.displayTab = "signin";
+    }else {
+      this.displayTab = "signup";
+    }
+    }
 }

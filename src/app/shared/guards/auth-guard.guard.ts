@@ -7,7 +7,6 @@ export class AuthGuardGuard implements CanActivate {
   /* ATTRIBUTES */
 
   isLogin = false;
-  isGSAAdmin = false;
 
   /* CONSTRUCTOR */
 

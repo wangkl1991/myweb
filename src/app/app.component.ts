@@ -10,7 +10,6 @@ import 'hammerjs';
 export class AppComponent {
     /* ATTRIBUTES */
     isLogin = false;
-    isGSAAdmin = false;
 
 
     

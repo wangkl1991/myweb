@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MaterialModule } from '../shared/modules/material/material.module';
 import { AuthComponent } from './auth.component';
+import { DyGridComponent } from '../shared/componenes/dy-grid/dy-grid.component';
 
 
 
@@ -20,7 +21,8 @@ import { AuthComponent } from './auth.component';
   ],
   declarations: [AuthComponent,
     UserloginComponent,
-    UsersignupComponent
+    UsersignupComponent,
+    DyGridComponent
                 ]
 
 })

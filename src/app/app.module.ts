@@ -20,7 +20,6 @@ import { AuthModule } from './auth/auth.module';
 
 //Services
 import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
-import { DyGridComponent } from './shared/componenes/dy-grid/dy-grid.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material';
 import { MaterialModule } from './shared/modules/material/material.module';
@@ -39,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     UserComponent,
-    DyGridComponent,
+  
     
   ],
   imports: [
