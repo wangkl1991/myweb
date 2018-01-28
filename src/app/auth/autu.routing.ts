@@ -4,6 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 //Components
 import { PublicComponent } from '../home/public/public.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { AuthComponent } from './auth.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+
 
 
 const routes: Routes = [
@@ -12,9 +15,10 @@ const routes: Routes = [
         component: PublicComponent, 
         children: [
             {path: '', redirectTo: 'signin', pathMatch: 'full'},
-            {path: 'signin', component: UserloginComponent},
+            {path: 'signin', component: AuthComponent},
+            {path: 'forgetpassword', component: ForgetpasswordComponent }
 
-        ]
+        ]   
     },
     
 ];
