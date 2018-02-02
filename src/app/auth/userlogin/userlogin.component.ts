@@ -16,7 +16,7 @@ export class UserloginComponent implements OnInit {
   }
 
   goForgetPW(){
-    this.router.navigate(['/auth/forgetpassword'])
+    this.router.navigate(['/forgetpassword'])
   }
 
 }

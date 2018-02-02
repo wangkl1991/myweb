@@ -2,20 +2,27 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // COMPONENTS
+import { BlogComponent } from './blog.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { BlogListComponent } from './blog-list/blog-list.component';
 import { PrivateComponent } from '../home/private/private.component';
-import { EducationComponent } from './education/education.component';
 
 
 //Router gurad
 
 
 
+
+
 const routes: Routes = [
     {
-        path: 'user',
+        path: 'blog',
         component: PrivateComponent,
         children:[
-            {path: 'education', component: EducationComponent}
+          
+
+          {path: 'blogdetail', component: BlogDetailComponent}
+
         ]
     },
 ];
@@ -28,4 +35,4 @@ const routes: Routes = [
       RouterModule
     ]
   })
-  export class UserRoutingModule { }
+  export class BlogRoutingModule { }

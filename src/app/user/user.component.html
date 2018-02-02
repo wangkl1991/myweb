@@ -1,3 +1,8 @@
-<div> Information</div>
-<div> Education</div>
-<div> Experence</div>
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile><span [routerLink] = "['/user/education']" style="cursor:pointer"> Education</span> </mat-grid-tile>
+    <mat-grid-tile>Experience</mat-grid-tile>
+    <mat-grid-tile>Your life</mat-grid-tile>
+    <mat-grid-tile>Photo</mat-grid-tile>
+  </mat-grid-list>
+  
+<router-outlet></router-outlet>

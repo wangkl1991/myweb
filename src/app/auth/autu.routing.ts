@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { PublicComponent } from '../home/public/public.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { AuthComponent } from './auth.component';
-import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 
 
 
@@ -16,7 +15,6 @@ const routes: Routes = [
         children: [
             {path: '', redirectTo: 'signin', pathMatch: 'full'},
             {path: 'signin', component: AuthComponent},
-            {path: 'forgetpassword', component: ForgetpasswordComponent }
 
         ]   
     },

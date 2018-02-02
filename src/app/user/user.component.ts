@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenServiceService } from '../shared/services/token-service.service';
 
 @Component({
   selector: 'app-user',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-
-  constructor() { }
+   userVar;
+  constructor(private tokenService: TokenServiceService) { }
 
   ngOnInit() {
+    this.userVar = this.tokenService.testVar
   }
 
 }

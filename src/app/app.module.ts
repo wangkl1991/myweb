@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app.routing';
 import { UserModule } from './user/user.module';
 import { HomeModule } from './home/home.module';
 import { AuthModule } from './auth/auth.module';
+import { BlogModule } from './blog/blog.module';
 
 //Services
 import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
@@ -26,6 +27,10 @@ import { MaterialModule } from './shared/modules/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+
+import { TokenServiceService } from './shared/services/token-service.service';
+
+
 
 
 
@@ -38,6 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     UserComponent,
+    
   
     
   ],
@@ -47,6 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
     UserModule,
     HomeModule,
     AuthModule,
+    BlogModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -57,7 +64,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     
   ],
-  providers: [AuthGuardGuard],
+  providers: [AuthGuardGuard,
+              TokenServiceService 
+               ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

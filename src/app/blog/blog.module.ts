@@ -4,18 +4,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/modules/material/material.module';
 
 
-//routing
-import { UserRoutingModule } from './user.routing';
 
-import { EducationComponent } from './education/education.component';
-import { EduTableComponent } from './education/edu-table/edu-table.component';
+import { BlogComponent } from './blog.component';
+
+//routing
+
+import { BlogRoutingModule } from './blog.rougting';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { BlogListComponent } from './blog-list/blog-list.component';
 
 
 
 @NgModule({
     imports: [
       CommonModule,
-      UserRoutingModule,
+      BlogRoutingModule,
       FormsModule,
       ReactiveFormsModule,
       MaterialModule
@@ -24,9 +27,12 @@ import { EduTableComponent } from './education/edu-table/edu-table.component';
       
     ],
     declarations: [
-    EducationComponent,
-    EduTableComponent
+    BlogComponent,
+    BlogDetailComponent,
+    BlogListComponent,
+    
+    
     
     ]
   })
-  export class UserModule { }
+  export class BlogModule { }
