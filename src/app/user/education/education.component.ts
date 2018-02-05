@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -7,12 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {
+  isColleage = false;
 
   constructor(
    
   ) { }
 
+
   ngOnInit() {
   }
+  
 
+  selectEdu(n) {
+      if(n == 0){
+        this.isColleage = false; 
+      }else {
+        this.isColleage = true;
+      }
+
+
+  }
 }

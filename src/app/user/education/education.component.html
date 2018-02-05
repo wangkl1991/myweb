@@ -1,12 +1,14 @@
     <div style="width: 20%; float:left">
         <button mat-button [matMenuTriggerFor]="menu">Menu</button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>Hign School</button>
-          <button mat-menu-item>University</button>
+          <button mat-menu-item (click)="selectEdu(0)" >Hign School</button>
+          <button mat-menu-item (click)="selectEdu(1)">University</button>
         </mat-menu>
+        {{isColleage}}
       </div>
-      
       <div style="width:80%; float:left" >
-          <app-edu-table></app-edu-table>
+          <app-edu-table
+          [type] ="type"
+          ></app-edu-table>
       </div>
 
