@@ -17,11 +17,10 @@ import { PrivateComponent } from '../home/private/private.component';
 const routes: Routes = [
     {
         path: 'blog',
-        component: PrivateComponent,
+        component: BlogComponent,
         children:[
-          
-
-          {path: 'blogdetail', component: BlogDetailComponent}
+          {path:'bloglist', component: BlogListComponent},
+          {path:'blogdetail', component: BlogDetailComponent}
 
         ]
     },

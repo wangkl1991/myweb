@@ -12,6 +12,7 @@ import { BlogComponent } from './blog.component';
 import { BlogRoutingModule } from './blog.rougting';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
+import { CardComponent } from '../shared/componenes/card/card.component';
 
 
 
@@ -30,8 +31,7 @@ import { BlogListComponent } from './blog-list/blog-list.component';
     BlogComponent,
     BlogDetailComponent,
     BlogListComponent,
-    
-    
+    CardComponent
     
     ]
   })
