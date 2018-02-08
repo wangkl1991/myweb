@@ -9,6 +9,7 @@ import { UserRoutingModule } from './user.routing';
 
 import { EducationComponent } from './education/education.component';
 import { EduTableComponent } from './education/edu-table/edu-table.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 
@@ -25,7 +26,8 @@ import { EduTableComponent } from './education/edu-table/edu-table.component';
     ],
     declarations: [
     EducationComponent,
-    EduTableComponent
+    EduTableComponent,
+    ExperienceComponent
     
     ]
   })

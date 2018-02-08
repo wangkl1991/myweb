@@ -1,56 +1,83 @@
-  <div class="container">
-      <div class="row">
-            <div style="width: 20%; float:left">
-                    <button mat-raised-button [matMenuTriggerFor]="menu" style="height: 80px; font-size:20px; color:#4286f4">Select time period</button>
-                    <mat-menu #menu="matMenu">
-                      <button mat-menu-item (click)="selectEdu(0)" >Hign School</button>
-                      <button mat-menu-item (click)="selectEdu(1)">University</button>
-                    </mat-menu>
-                  </div>
-            
-                  <div style="width:80%; float:left" >
-                      <app-edu-table
-                      [type] ="type"
-                      ></app-edu-table>
-                  </div>
-            
-                  
-      </div>
- 
-      <div class="row" style="margin-top:20px">
-          <div style="padding-left:20%"> 
-                <label for="schoolName">University Name</label>
-                <div id="schoolName">
-                    GWU
-                </div>
-          </div>
-      </div>
+<div class="container">
+    <div class="row">
+        <div style="width: 20%; float:left">
+            <button mat-raised-button [matMenuTriggerFor]="menu" style="height: 80px; font-size:20px; color:#4286f4">Select time period</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="selectEdu(0)">Hign School</button>
+                <button mat-menu-item (click)="selectEdu(1)">University</button>
+            </mat-menu>
+        </div>
 
-      <div class="row" style="margin-top:20px">
-            <div style="padding-left:20%"> 
-                  <label for="timePeriod">Time period</label>
-                  <div id="timePeriod">
-                      2015 - 2017
-                  </div>
+
+
+    </div>
+
+
+    <div *ngIf="!isColleage">
+        <div class="row" style="margin-top:20px">
+            <div style="padding-left:20%">
+                <label for="HighschoolName">High School Name</label>
+                <div id="HighschoolName">
+                    YueYang the frist middle school
+                </div>
             </div>
         </div>
 
         <div class="row" style="margin-top:20px">
-                <div style="padding-left:20%"> 
-                      <label for="college">College</label>
-                      <div id="college">
-                         School of Engineering& Applied Science
-                      </div>
+            <div style="padding-left:20%">
+                <label for="HighschoolTime">Time Period</label>
+                <div id="HighschoolTime">
+                    2007 - 2010
                 </div>
             </div>
-            <div class="row" style="margin-top:20px">
-                    <div style="padding-left:20%"> 
-                          <label for="college">Major</label>
-                          <div id="college">
-                             Computer Science
-                          </div>
-                    </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div *ngIf="isColleage">
+
+
+        <div style="width: 80%; float:right">
+            <app-edu-table [type]="type"></app-edu-table>
+        </div>
+
+        <div class="row" style="margin-top:20px">
+            <div style="padding-left:20%">
+                <label for="schoolName">University Name</label>
+                <div id="schoolName">
+                    GWU
                 </div>
+            </div>
+        </div>
 
+        <div class="row" style="margin-top:20px">
+            <div style="padding-left:20%">
+                <label for="timePeriod">Time period</label>
+                <div id="timePeriod">
+                    2015 - 2017
+                </div>
+            </div>
+        </div>
 
-  </div>
+        <div class="row" style="margin-top:20px">
+            <div style="padding-left:20%">
+                <label for="college">College</label>
+                <div id="college">
+                    School of Engineering& Applied Science
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px">
+            <div style="padding-left:20%">
+                <label for="college">Major</label>
+                <div id="college">
+                    Computer Science
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
