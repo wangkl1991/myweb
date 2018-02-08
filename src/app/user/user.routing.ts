@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PrivateComponent } from '../home/private/private.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { AlbumComponent } from './album/album.component';
 
 
 //Router gurad
@@ -17,7 +18,8 @@ const routes: Routes = [
         component: PrivateComponent,
         children:[
             {path: 'education', component: EducationComponent},
-            {path: 'experience', component: ExperienceComponent}
+            {path: 'experience', component: ExperienceComponent},
+            {path: 'album', component: AlbumComponent}
         ]
     },
 ];

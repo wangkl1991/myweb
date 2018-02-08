@@ -10,6 +10,7 @@ import { UserRoutingModule } from './user.routing';
 import { EducationComponent } from './education/education.component';
 import { EduTableComponent } from './education/edu-table/edu-table.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { AlbumComponent } from './album/album.component';
 
 
 
@@ -27,7 +28,8 @@ import { ExperienceComponent } from './experience/experience.component';
     declarations: [
     EducationComponent,
     EduTableComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AlbumComponent
     
     ]
   })
