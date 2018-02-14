@@ -1,42 +1,35 @@
-<div style="display: absolute;">
-        <div id ="authBody" style="display: fixed; z-index: -1"> 
-                <app-dy-grid></app-dy-grid>
-
-        </div>
+    <div id="authBody" style="position:absolute; left:0px; top: 0px; z-index: -1">
+        <app-dy-grid></app-dy-grid>
+    </div>
 
 
-        <div class="row spacing nopadding">
-                <div class="row-eq-height" style="padding: 60px 0px">
-                    <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-12" >
-                        <div style="padding: 40px;" class="srt-blue">           
-                            <h1 style="font-weight: 700;">Kailun's Website</h1>
-                            <h3>Kailun's website to practice for different function </h3>                
+    <div class="row spacing nopadding" style="position:absolute; top:20%;left:20%">
+        <div class="row-eq-height" style="padding-top:10px">
+            <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-12">
+                <div style="padding: 40px;">
+                    <h1 style="font-weight: 700;">Kailun's Website</h1>
+                    <h3>Kailun's website to practice for different function </h3>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div style="border: 1px solid #dadada; box-shadow: 1px 1px 10px 0px #dadada; background-color: white">
+
+
+                    <mat-tab-group (selectedTabChange)="ChangeTab($event)">
+                        <mat-tab label="Sign In"></mat-tab>
+                        <mat-tab label="Sign Up"></mat-tab>
+                    </mat-tab-group>
+                    <div style="padding: 40px;" class="clearfix">
+                        <div *ngIf="displayTab=='signin'">
+                            <app-userlogin></app-userlogin>
                         </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div style="border: 1px solid #dadada; box-shadow: 1px 1px 10px 0px #dadada; background-color: white">
-                            
-
-                            <mat-tab-group (selectedTabChange)="ChangeTab($event)">
-                                    <mat-tab label="Sign In"></mat-tab>
-                                    <mat-tab label="Sign Up"></mat-tab>
-                             </mat-tab-group>
-                            <div style="padding: 40px;" class="clearfix">
-                                <div *ngIf="displayTab=='signin'">
-                                        <app-userlogin></app-userlogin>
-                                    </div>
-                                <div *ngIf="displayTab=='signup'">
-                                        <app-usersignup></app-usersignup>
-                                    </div>
-                            </div>
+                        <div *ngIf="displayTab=='signup'">
+                            <app-usersignup></app-usersignup>
                         </div>
                     </div>
                 </div>
             </div>
-
-</div>
-
-
-
+        </div>
+    </div>
 
