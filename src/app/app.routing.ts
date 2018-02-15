@@ -7,6 +7,7 @@ import { AuthComponent } from './auth/auth.component';
 import { UserComponent } from './user/user.component';
 import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
 import { BlogComponent } from './blog/blog.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const routes: Routes =[
@@ -16,6 +17,7 @@ const routes: Routes =[
     {path: 'user', component: UserComponent},
     {path: 'forgetpassword', component: ForgetpasswordComponent},
     {path: 'blog', component: BlogComponent},
+    {path: 'admin', component: AdminComponent}
 
 ];
 
