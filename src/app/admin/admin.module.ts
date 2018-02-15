@@ -8,6 +8,7 @@ import { MaterialModule } from '../shared/modules/material/material.module';
 import { AdminRoutingModule } from './admin.routing';
 import { AdminComponent } from './admin.component';
 import { UserTableComponent } from './user-table/user-table.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 // import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
 
@@ -25,7 +26,8 @@ import { UserTableComponent } from './user-table/user-table.component';
   ],
   declarations: [
     AdminComponent,
-    UserTableComponent
+    UserTableComponent,
+    SideBarComponent
    
   ],
   // providers: [
