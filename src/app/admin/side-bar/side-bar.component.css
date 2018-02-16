@@ -4,5 +4,11 @@
 }
 
 .side-bar-title {
-    border-bottom: 1px s;
+    font-size:20px
+}
+
+#line1 {
+    margin-top:20px;
+    background:linear-gradient(to
+ left,#efefef,#b6b6b6,#efefef);height:1px
 }
