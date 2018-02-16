@@ -14,6 +14,9 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { CardComponent } from '../shared/componenes/card/card.component';
 
+//Service
+import { BlogService } from '../shared/services/blog.service';
+
 
 
 @NgModule({
@@ -25,14 +28,14 @@ import { CardComponent } from '../shared/componenes/card/card.component';
       MaterialModule
     ],
     providers: [
-      
+      BlogService
     ],
     declarations: [
     BlogComponent,
     BlogDetailComponent,
     BlogListComponent,
     CardComponent
+    ],
     
-    ]
   })
   export class BlogModule { }

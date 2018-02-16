@@ -28,7 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
+
+//Services
 import { TokenServiceService } from './shared/services/token-service.service';
+import { AuthService } from './shared/services/auth.service';
 
 
 
@@ -65,7 +68,8 @@ import { TokenServiceService } from './shared/services/token-service.service';
     
   ],
   providers: [AuthGuardGuard,
-              TokenServiceService 
+              TokenServiceService, 
+              AuthService
                ],
   bootstrap: [AppComponent]
 })
