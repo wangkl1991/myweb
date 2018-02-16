@@ -12,3 +12,19 @@
     background:linear-gradient(to
  left,#efefef,#b6b6b6,#efefef);height:1px
 }
+
+
+/* .side-bar-wrapper{
+  margin-top:20px;
+} */
+
+
+.active {
+    background-color: #e63b37;
+}
+.activeColor{
+    color:white
+}
+.side-bar-content{
+    min-height: 79vh;
+}

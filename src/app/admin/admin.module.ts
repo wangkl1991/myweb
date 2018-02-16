@@ -9,6 +9,7 @@ import { AdminRoutingModule } from './admin.routing';
 import { AdminComponent } from './admin.component';
 import { UserTableComponent } from './user-table/user-table.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { AnalyticComponent } from './analytic/analytic.component';
 
 // import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
 
@@ -27,7 +28,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
   declarations: [
     AdminComponent,
     UserTableComponent,
-    SideBarComponent
+    SideBarComponent,
+    AnalyticComponent
    
   ],
   // providers: [
