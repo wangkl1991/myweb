@@ -18,6 +18,7 @@ import { UserModule } from './user/user.module';
 import { HomeModule } from './home/home.module';
 import { AuthModule } from './auth/auth.module';
 import { BlogModule } from './blog/blog.module';
+import { AdminModule } from './admin/admin.module';
 
 //Services
 import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
@@ -57,6 +58,7 @@ import { AuthService } from './shared/services/auth.service';
     HomeModule,
     AuthModule,
     BlogModule,
+    AdminModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,

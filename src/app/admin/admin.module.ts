@@ -5,14 +5,11 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/modules/material/material.module';
+import { AdminRoutingModule } from './admin.routing';
+import { AdminComponent } from './admin.component';
+import { UserTableComponent } from './user-table/user-table.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
-
-//Components
-import { AuthComponent } from './auth.component';
-import { DyGridComponent } from '../shared/componenes/dy-grid/dy-grid.component';
-import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
-import { UserloginComponent } from './userlogin/userlogin.component';
-import { UsersignupComponent } from './usersignup/usersignup.component';
 // import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
 
 
@@ -24,14 +21,14 @@ import { UsersignupComponent } from './usersignup/usersignup.component';
     BrowserAnimationsModule,
     FormsModule,
     MaterialModule,
+    AdminRoutingModule
     
   ],
   declarations: [
-    AuthComponent,
-    UserloginComponent,
-    UsersignupComponent,
-    DyGridComponent,
-    ForgetpasswordComponent
+    AdminComponent,
+    UserTableComponent,
+    SideBarComponent
+   
   ],
   // providers: [
   //   { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher }
@@ -39,4 +36,4 @@ import { UsersignupComponent } from './usersignup/usersignup.component';
 
   
 })
-export class AuthModule { }
+export class AdminModule { }

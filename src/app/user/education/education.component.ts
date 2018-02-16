@@ -8,6 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
   isColleage = false;
+  
+  
 
   constructor(
    

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogListComponent implements OnInit {
 
+  typesOfBlogs = ['Pesional Blogs', 'Business Blogs', 'Media Blogs', 'Niche Blogs', 'Reverse Blogs',];
+  
+
   constructor() { }
 
   ngOnInit() {
