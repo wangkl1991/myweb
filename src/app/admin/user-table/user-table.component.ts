@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatTableDataSource} from '@angular/material';
+import { MatTableDataSource, PageEvent } from '@angular/material';
 
 export interface Element {
    position: number;
@@ -11,11 +11,11 @@ export interface Element {
 
 
 const ELEMENT_DATA: Element[] = [
-  {position: 1, name: 'Hydrogen', role: 'admin', symbol: 'H'},
-  {position: 2, name: 'Helium', role: 'owner', symbol: 'He'},
-  {position: 3, name: 'Lithium', role: 'normal', symbol: 'Li'},
-  {position: 4, name: 'Beryllium', role: 'student', symbol: 'Be'},
-  {position: 5, name: 'Boron', role: 'teacher', symbol: 'B'},
+  {position: 1, name: 'wkl', role: 'admin', symbol: 'W'},
+  {position: 2, name: 'skc', role: 'owner', symbol: 'S'},
+  {position: 3, name: 'cys', role: 'normal', symbol: 'C'},
+  {position: 4, name: 'cs', role: 'student', symbol: 'CS'},
+  {position: 5, name: 'joo', role: 'teacher', symbol: 'J'},
 
 ];
 @Component({
@@ -27,6 +27,18 @@ export class UserTableComponent implements OnInit {
   displayedColumns = ['position', 'name', 'role', 'symbol'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   
+
+ // MatPaginator Inputs
+ length = 100;
+ pageSize = 10;
+ pageSizeOptions = [5, 10, 25, 100];
+
+ // MatPaginator Output
+ pageEvent: PageEvent;
+
+ setPageSizeOptions(setPageSizeOptionsInput: string) {
+   this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
+ }
 
   constructor() { }
 

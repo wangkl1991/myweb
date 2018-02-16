@@ -9,15 +9,22 @@
   .user-table-header {
     min-height: 64px;
     padding: 8px 24px 0;
-    border: 1px solid pink
+    width:90%;
+    background-color:#e63b37;
+    border-radius: 5px;
   }
   
   .mat-form-field {
     font-size: 14px;
     width: 100%;
+    color: white;
   }
+
   
   .mat-table {
     overflow: auto;
     max-height: 500px;
   }
+
+
+ 
