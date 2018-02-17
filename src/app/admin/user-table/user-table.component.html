@@ -6,7 +6,7 @@
     </mat-form-field>
   </div>
 
-  <mat-table #table [dataSource]="dataSource" class="container">
+  <mat-table #table [dataSource]="dataSource" style="width:95%" class="container">
 
     <!-- Position Column -->
     <ng-container matColumnDef="position">
@@ -36,6 +36,6 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 
-  <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="pageEvent = $event" class="container">
+  <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="pageEvent = $event" style="width:95%" class="container">
   </mat-paginator>
 </div>
