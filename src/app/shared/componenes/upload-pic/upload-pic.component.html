@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <input type="file" id="avatar" (change)="onFileChange($event)" #fileInput aria-label="click to choose file">
+    <button type="button" class="btn btn-sm btn-default" (click)="clearFile()">clear file</button>
+  </div>
+  <button type="submit" [disabled]="form.invalid || loading" class="btn btn-success">Submit <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+</form>
+
+
+<img *ngIf="isSelectedPic" [src]="userPic">

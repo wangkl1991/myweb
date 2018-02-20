@@ -11,7 +11,7 @@ import { EducationComponent } from './education/education.component';
 import { EduTableComponent } from './education/edu-table/edu-table.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AlbumComponent } from './album/album.component';
-
+import { UploadPicComponent } from '../shared/componenes/upload-pic/upload-pic.component';
 
 
 @NgModule({
@@ -29,7 +29,8 @@ import { AlbumComponent } from './album/album.component';
     EducationComponent,
     EduTableComponent,
     ExperienceComponent,
-    AlbumComponent
+    AlbumComponent,
+    UploadPicComponent
     
     ]
   })
