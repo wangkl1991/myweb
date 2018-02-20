@@ -1,12 +1,15 @@
 <div class="user-table-container mat-elevation-z8">
   <div class="user-table-header center container">
+      <img tabindex="0" id="csvlogo" alt="click to export as csv" src="../../../assets/downloadcsv.jpeg" style="float:left; cursor:pointer; max-height:40px"
+      (click)="exportToExcel($event)">
     <h4 style="color:white; font-weight:600">User Table</h4>
     <mat-form-field>
       <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+     
     </mat-form-field>
   </div>
 
-  <mat-table #table [dataSource]="dataSource" style="width:95%" class="container">
+  <mat-table #table [dataSource]="dataSource" style="width:95%; border-radius:5px" class="container">
 
     <!-- Position Column -->
     <ng-container matColumnDef="position">
@@ -36,6 +39,7 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 
+  
   <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="pageEvent = $event" style="width:95%" class="container">
   </mat-paginator>
 </div>

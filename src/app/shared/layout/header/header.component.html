@@ -22,5 +22,16 @@
       <a class="nav-link" [routerLink]="['/admin']">Admin
   </a>
     </li>
+
   </ul>
+  <ul  class="nav navbar-nav" style="float: right; padding-right:2%;color:white" >
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Help</button>
+    </mat-menu>
+    
+    <button mat-icon-button [matMenuTriggerFor]="appMenu" >
+      <mat-icon>Hi, user</mat-icon>
+    </button>
+</ul>
 </nav>
