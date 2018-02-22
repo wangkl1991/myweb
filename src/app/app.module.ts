@@ -46,11 +46,7 @@ import { AuthService } from './shared/services/auth.service';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    UserComponent,
-    
-    
-  
-    
+    UserComponent,    
   ],
   imports: [
     BrowserModule,

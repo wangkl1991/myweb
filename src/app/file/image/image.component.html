@@ -1,0 +1,6 @@
+<img [src]="imageToShow"
+alt="Place image title"
+*ngIf="!isImageLoading; else noImageFound">
+<ng-template #noImageFound>
+  <p>no image can be found!</p>
+</ng-template>
