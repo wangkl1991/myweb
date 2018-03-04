@@ -1,6 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenServiceService } from '../shared/services/token-service.service';
 
+
+declare interface CardInfos {
+  path: string;
+  name: string;
+  
+}
+
+const  cardInfos: CardInfos[] = [{
+  name:'Education',
+  path: "/user/education",
+},
+{
+  name:"Experience",
+  path:"/user/experience",
+},
+{
+  name:"Your life",
+  path:"/blog/bloglist",
+},
+{
+  name:"Album",
+  path:"/user/album",
+}
+
+];
+
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -8,25 +35,7 @@ import { TokenServiceService } from '../shared/services/token-service.service';
 })
 export class UserComponent implements OnInit {
    userVar;
-   cardInfos = [{
-     name:'Education',
-     path: "/user/education",
-   },
-   {
-     name:"Experience",
-     path:"/user/experience",
-   },
-   {
-     name:"Your life",
-     path:"/blog/bloglist",
-   },
-   {
-     name:"Album",
-     path:"/user/album",
-   }
-  
-  ]
-  
+   cardInfos = cardInfos;
   
 
   constructor(private tokenService: TokenServiceService) { }
