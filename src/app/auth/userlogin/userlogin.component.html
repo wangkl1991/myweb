@@ -8,8 +8,11 @@
     <input matInput type ="password"  placeholder="Your password"/>
   </mat-form-field>
 
-  <button type="button" class="btn btn-primary" mat-button>Login in</button>
-  <a (click) ="goForgetPW()" style="padding-top: 20px; padding-left: 40px" > Forgot Password?</a>
+  <div class="row">
+
+  <button type="button" class="btn btn-primary col-md-5" mat-button>Login in</button>
+  <a (click) ="goForgetPW()" style="padding-top: 20px; padding-left: 40px; cursor:pointer" class="col-md-7"> Forgot Password?</a>
+  </div>
 
 
 </form>

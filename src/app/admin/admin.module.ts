@@ -11,6 +11,8 @@ import { UserTableComponent } from './user-table/user-table.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { AnalyticComponent } from './analytic/analytic.component';
 
+
+
 //Service
 import { ExcelService } from '../shared/services/excel.service';
 
@@ -32,7 +34,8 @@ import { ExcelService } from '../shared/services/excel.service';
     AdminComponent,
     UserTableComponent,
     SideBarComponent,
-    AnalyticComponent
+    AnalyticComponent,
+    
    
   ],
   providers: [
