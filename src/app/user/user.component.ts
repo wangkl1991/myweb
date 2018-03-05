@@ -42,6 +42,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.userVar = this.tokenService.testVar
+    
   }
 
 }

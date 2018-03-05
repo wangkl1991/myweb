@@ -6,7 +6,7 @@
   <div class="nav-container">
       <ul class="nav">
           <li routerLinkActive="active-link" *ngFor="let menuItem of menuItems"  style="margin-top:20px">
-              <a  [routerLink]="[menuItem.path]" class="row" style="color:#a9afbb">
+              <a  [routerLink]="[menuItem.path]" class="row" style="color:#3c4858; font-weight:normal">
                   <i class="{{menuItem.class}}" style=" font-size:20px; padding-left:10px"><span style="padding-left: 20px; font-weight:500;" >{{menuItem.title}}</span></i>
               </a>
           </li>

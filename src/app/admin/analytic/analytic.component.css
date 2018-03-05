@@ -1,0 +1,50 @@
+.analytic-content{
+    min-height: 80vh
+}
+.card-header{
+    margin-left: 12px;
+    color:white;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top:25px;
+    border-radius: 5px;
+    position: absolute;
+    top:-20px;
+    box-shadow:4px 4px 2px #888888    
+}
+.card {
+    margin-top:100px; 
+    border: 1px hidden black;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.card-stats {
+       
+
+}
+
+.category{
+    padding-left:70%;
+}
+.title{
+    padding-left: 60%;
+}
+
+.line {
+    margin-top:20px;
+    background:linear-gradient(to
+ left,#efefef,#b6b6b6,#efefef);height:1px
+}
+.card-footer{
+  
+}
+.stats{
+    padding-top:5px;
+    padding-bottom: 5px; 
+    color: #999
+    
+}
