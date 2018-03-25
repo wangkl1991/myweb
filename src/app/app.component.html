@@ -1,7 +1,18 @@
 
-<app-header [isLogin]="isLogin" ></app-header>
-<div style="min-height:80vh">
-        <router-outlet></router-outlet>      
+
+
+
+<div *ngIf="isSystem">  
+                <app-header [isLogin]="isLogin" ></app-header>
+                <div style="min-height:80vh">
+                        <router-outlet></router-outlet>      
+                </div>
+                
+                <app-footer></app-footer> 
 </div>
 
-<app-footer></app-footer> 
+
+
+<div id="frontPage">
+
+</div>

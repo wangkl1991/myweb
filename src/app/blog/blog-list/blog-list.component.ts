@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService } from '../../shared/services/blog.service';
 
 @Component({
   selector: 'app-blog-list',
@@ -8,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class BlogListComponent implements OnInit {
 
   typesOfBlogs = ['Pesional Blogs', 'Business Blogs', 'Media Blogs', 'Niche Blogs', 'Reverse Blogs',];
-  
+  params = 'sdsd'
 
-  constructor() { }
+  constructor(private blogService:BlogService) { }
 
   ngOnInit() {
+    
+   this.blogService.getBlogs(this.params); 
   }
 
 }

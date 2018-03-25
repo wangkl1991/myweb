@@ -10,7 +10,13 @@ import 'hammerjs';
 export class AppComponent {
     /* ATTRIBUTES */
     isLogin = false;
+    isSystem = false;
 
+  frontPageClick() {
+    this.isSystem = true;
 
+  }
     
 }
+
+
