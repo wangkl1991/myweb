@@ -33,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
 //Services
 import { TokenServiceService } from './shared/services/token-service.service';
 import { AuthService } from './shared/services/auth.service';
+import { SearchService } from './shared/services/search.service';
 
 
 
@@ -68,7 +69,8 @@ import { AuthService } from './shared/services/auth.service';
   ],
   providers: [AuthGuardGuard,
               TokenServiceService, 
-              AuthService
+              AuthService,
+              SearchService
                ],
   bootstrap: [AppComponent]
 })
