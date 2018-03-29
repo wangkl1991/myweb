@@ -10,10 +10,22 @@
 
 
 <div id="frontPage">
-        
-                <mat-form-field>
+
+        <!-- <mat-form-field>
                         <textarea matInput placeholder="Search..." matTextareaAutosize matAutosizeMinRows="1" matAutosizeMaxRows="1" [(ngModel)]='searchStr'></textarea>
-                </mat-form-field>
-                <button mat-button (click) = "clickMe()">Click me!</button>
-        
+                </mat-form-field> -->
+        <div class="container" style="top:40%; left:20% ;position: absolute;">
+                <form>
+                        <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" required placeholder="Seach in Google">
+                        </div>
+                        <button type="submit" class="btn btn-success">Search</button>
+
+                </form>
+
+        </div>
+
+
+
 </div>
