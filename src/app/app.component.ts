@@ -40,7 +40,6 @@ export class AppComponent {
   }
 
   clickMe() {
-    console.log(this.searchStr);
     //this.router.navigateByUrl("http://www.google.com.hk/search?q="+ this.searchStr)
     window.location.href = "http://www.google.com.hk/search?q=" + this.searchStr;
 

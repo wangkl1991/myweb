@@ -17,10 +17,10 @@
         <div class="container" style="top:40%; left:20% ;position: absolute;">
                 <form>
                         <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" required placeholder="Seach in Google">
+                                <label for="name">content</label>
+                                <input type="text" class="form-control" id="content" required placeholder="Seach in Google" [(ngModel)]="searchStr" name="content">
                         </div>
-                        <button type="submit" class="btn btn-success">Search</button>
+                        <button type="submit" class="btn btn-success" (click)="clickMe()">Search</button>
 
                 </form>
 
