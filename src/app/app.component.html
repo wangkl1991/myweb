@@ -20,8 +20,8 @@
                                 <label for="name">content</label>
                                 <input type="text" class="form-control" id="content" required placeholder="Seach in Google" [(ngModel)]="searchStr" name="content">
                         </div>
-                        <button type="submit" class="btn btn-success" (click)="clickMe()">Search</button>
-
+                        <button type="submit" class="btn btn-success" (click)="clickMe()" [@animateState]="state">Search</button>
+                        
                 </form>
 
         </div>
