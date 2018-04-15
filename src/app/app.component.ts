@@ -23,18 +23,17 @@ export class AppComponent {
   searchTerm$ = new Subject<string>();
   constructor(
     private searchService: SearchService,
-    private router:Router
-  ) { 
-    
+    private router: Router
+  ) {
     this.searchService.search(this.searchTerm$)
-    .subscribe(results => {
-      this.results = results.results;
-    });
+      .subscribe(results => {
+        this.results = results.results;
+      });
   }
 
-    /* ATTRIBUTES */
-    isLogin = false;
-    isSystem = false;
+  /* ATTRIBUTES */
+  isLogin = false;
+  isSystem = false;
 
   frontPageClick() {
     this.isSystem = true;
@@ -44,6 +43,22 @@ export class AppComponent {
   clickMe() {
     //this.router.navigateByUrl("http://www.google.com.hk/search?q="+ this.searchStr)
     window.location.href = "http://www.google.com.hk/search?q=" + this.searchStr;
+
+  }
+
+  setBcg() {
+    let picStorage = ['url(../assets/img/WechatIMG13-min.png) no-repeat center center fixed', 'url(../assets/img/WechatIMG15.png) no-repeat center center fixed', 'url(../assets/img/WechatIMG17.png) no-repeat center center fixed'];
+    let index = Math.floor((Math.random()*picStorage.length))
+    let style = {
+      "background": picStorage[index],
+      "background-repeat": 'no-repeat',
+      "background-size": 'cover',
+      "background-position": 'center',
+      "overflow": 'auto',
+      "position": 'relative',
+      "height": '100vh',
+    }
+    return style;
 
   }
 

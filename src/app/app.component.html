@@ -9,18 +9,18 @@
 
 
 
-<div id="frontPage">
+<div id="frontPage" [ngStyle]="setBcg()">
 
         <!-- <mat-form-field>
                         <textarea matInput placeholder="Search..." matTextareaAutosize matAutosizeMinRows="1" matAutosizeMaxRows="1" [(ngModel)]='searchStr'></textarea>
                 </mat-form-field> -->
-        <div class="container" style="top:40%; left:20% ;position: absolute;">
+        <div class="container" style="top:40%; left:5% ;position: absolute;">
                 <form>
                         <div class="form-group">
                                 <label for="name">content</label>
                                 <input type="text" class="form-control" id="content" required placeholder="Seach in Google" [(ngModel)]="searchStr" name="content">
                         </div>
-                        <button type="submit" class="btn btn-success" (click)="clickMe()" [@animateState]="state">Search</button>
+                        <button type="submit" class="btn btn-success" (click)="clickMe()">Search</button>
                         
                 </form>
 
