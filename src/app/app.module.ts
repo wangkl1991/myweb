@@ -35,6 +35,7 @@ import { TokenServiceService } from './shared/services/token-service.service';
 import { AuthService } from './shared/services/auth.service';
 import { SearchService } from './shared/services/search.service';
 import { ButtonHoverDirective } from './shared/directives/button-hover.directive';
+import { HoverUnderlineDirective } from './shared/directives/hover-underline.directive';
 
 
 
@@ -49,7 +50,8 @@ import { ButtonHoverDirective } from './shared/directives/button-hover.directive
     HeaderComponent,
     FooterComponent,
     UserComponent,
-    ButtonHoverDirective,    
+    ButtonHoverDirective,
+    HoverUnderlineDirective,    
   ],
   imports: [
     BrowserModule,
