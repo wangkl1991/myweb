@@ -5,9 +5,9 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://localhost:3000',
+  SERVER_URL: 'http://localhost:3000',
   //SERVER_URL: ""
-  EMAIL_NOTIFICATION: true,
+  EMAIL_NOTIFICATION: false,
   FILE_CREDENTIALS: false,
 
 };

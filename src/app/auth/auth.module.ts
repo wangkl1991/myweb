@@ -13,6 +13,7 @@ import { DyGridComponent } from '../shared/componenes/dy-grid/dy-grid.component'
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { UsersignupComponent } from './usersignup/usersignup.component';
+import { AuthService } from './auth.service';
 // import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
 
 
@@ -33,9 +34,10 @@ import { UsersignupComponent } from './usersignup/usersignup.component';
     DyGridComponent,
     ForgetpasswordComponent
   ],
-  // providers: [
-  //   { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher }
-  // ]
+  providers: [
+    // { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher }
+    AuthService
+  ]
 
   
 })
