@@ -25,11 +25,17 @@ export class AppComponent {
     private searchService: SearchService,
     private router: Router
   ) {
+
     this.searchService.search(this.searchTerm$)
       .subscribe(results => {
         this.results = results.results;
       });
   }
+
+
+  ngOnInit() {
+  }
+ 
 
   /* ATTRIBUTES */
   isLogin = false;
@@ -61,6 +67,7 @@ export class AppComponent {
     return style;
 
   }
+  
 
     
 }

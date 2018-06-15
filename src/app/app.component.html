@@ -9,9 +9,9 @@
 
 
 
-<div id="frontPage" [ngStyle]="setBcg()">
+<div *ngIf="!isSystem" id="frontPage" >
         <div style= "left:80%; position: absolute">
-                        <button mat-button>Go to kailun's page</button>
+                        <button mat-button (click)="frontPageClick()">Go to kailun's page</button>
         </div>
 
         <!-- <mat-form-field>

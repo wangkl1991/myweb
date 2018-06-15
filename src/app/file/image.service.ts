@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ImageService {
 
-  private imageUrl = environment.API_URL + '/file/userImage'
+  private imageUrl = environment.SERVER_URL + '/file/userImage'
 
   constructor(private http:HttpService) { }
 

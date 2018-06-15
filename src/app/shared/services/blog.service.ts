@@ -12,7 +12,7 @@ import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class BlogService {
-  private URL_FIND_BLOGS = environment.API_URL + '/blog/test';
+  private URL_FIND_BLOGS = environment.SERVER_URL + '/blog/test';
 
 
 
