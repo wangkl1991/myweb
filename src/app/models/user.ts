@@ -1,13 +1,21 @@
 export class User {
-    username: '';
-    password: '';
+  id: String = '';
+  firstName: String = '';
+  lastName: String = '';
+  email: String = '';
+  password: String = '';
   
+
+ 
     /**
      *  constructor
      */
     constructor (user?: any) {
       if (user) {
-        this.username = user.username;
+        this.id = user._id;
+        this.firstName = user.firstName;
+        this.lastName = user.lastName;
+        this.email = user.email;
       }
     }
   }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import 'hammerjs';
 import { Subject } from 'rxjs/Subject';
 import { Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 
 //Service
@@ -23,13 +24,18 @@ export class AppComponent {
   searchTerm$ = new Subject<string>();
   constructor(
     private searchService: SearchService,
-    private router: Router
+    private router: Router,
+    private meta: Meta,
+    private title: Title
   ) {
-
     this.searchService.search(this.searchTerm$)
       .subscribe(results => {
         this.results = results.results;
       });
+      this.title.setTitle('Kailun');
+      this.meta.addTags([
+        { name: 'description', content: 'Kailun\' s website'}
+      ]);
   }
 
 
