@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/modules/material/material.module';
 
+import { HttpModule } from '@angular/http';
+import { HttpService } from '../shared/services/http.service';
 
 //Components
 import { AuthComponent } from './auth.component';
@@ -25,7 +27,8 @@ import { AuthService } from './auth.service';
     BrowserAnimationsModule,
     FormsModule,
     MaterialModule,
-    
+    HttpModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AuthComponent,
@@ -36,7 +39,11 @@ import { AuthService } from './auth.service';
   ],
   providers: [
     // { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher }
-    AuthService
+    AuthService,
+    HttpService
+  ],
+  exports: [
+    
   ]
 
   

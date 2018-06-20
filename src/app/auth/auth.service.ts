@@ -19,6 +19,7 @@ import { HttpService } from '../shared/services/http.service';
 export class AuthService {
   URL_USER_SIGNUP = environment.SERVER_URL + '/auth/signup';
   URL_USER_LOGIN = environment.SERVER_URL + '/auth/login';
+  URL_USER_TEST = environment.SERVER_URL + '/auth/test';
 
   constructor(
     private http: HttpService
@@ -31,7 +32,7 @@ export class AuthService {
   signup(user: User) {
     const body = JSON.stringify(user);
     const headers = new Headers({ 'Content-Type': 'application/json' });
-    return this.http.post(this.URL_USER_SIGNUP, body, { headers: headers })
+    return this.http.post(this.URL_USER_TEST, body, { headers: headers })
       .map((response: Response) => response.json())
       .catch((error: Response) => Observable.throw(error.json()));
   }

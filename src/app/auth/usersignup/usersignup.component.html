@@ -1,19 +1,29 @@
 <div class="example-container">
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
     <mat-form-field>
-      <input matInput placeholder="Email">
+      <input type="text" matInput placeholder="First Name" formControlName="firstName" id="firstName">
     </mat-form-field>
-    
+
     <mat-form-field>
-        <input matInput type="password" placeholder="Password">
+        <input type="text" matInput placeholder="Last Name" formControlName="lastName" id="lastName">
       </mat-form-field>
-      
-  
+
+    <mat-form-field>
+      <input type="email" matInput placeholder="Email" formControlName="email" id="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Password"f ormControlName="password" id="password">
+    </mat-form-field>
+
+
     <mat-form-field>
       <mat-select placeholder="Select Role">
         <mat-option value="option">Option</mat-option>
       </mat-select>
     </mat-form-field>
 
-    <button type="button" class="btn btn-primary" mat-button>Sign up</button>
+    <button type="submit" class="btn btn-primary" mat-button>Sign up</button>
+  </form>
 
-  </div>
+</div>
