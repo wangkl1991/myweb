@@ -35,6 +35,7 @@ import { TokenServiceService } from './shared/services/token-service.service';
 import { SearchService } from './shared/services/search.service';
 import { ButtonHoverDirective } from './shared/directives/button-hover.directive';
 import { HoverUnderlineDirective } from './shared/directives/hover-underline.directive';
+import { ErrorService } from './shared/services/error.service';
 
 
 
@@ -72,7 +73,9 @@ import { HoverUnderlineDirective } from './shared/directives/hover-underline.dir
   ],
   providers: [AuthGuardGuard,
               TokenServiceService, 
-              SearchService
+              SearchService,
+              ErrorService
+
                ],
   bootstrap: [AppComponent]
 })
