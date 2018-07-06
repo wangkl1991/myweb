@@ -22,6 +22,7 @@ export class AppComponent {
 
   results: Object;
   searchTerm$ = new Subject<string>();
+  backgroundStyle: object;
   constructor(
     private searchService: SearchService,
     private router: Router,
@@ -40,6 +41,7 @@ export class AppComponent {
 
 
   ngOnInit() {
+    this.backgroundStyle = this.setBcg();
   }
  
 
