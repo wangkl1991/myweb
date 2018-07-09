@@ -4,11 +4,9 @@ import { Subject } from 'rxjs/Subject';
 import { Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 
-
 //Service
 import { SearchService } from './shared/services/search.service';
 import { Navigation } from 'selenium-webdriver';
-
 
 
 @Component({
@@ -74,6 +72,13 @@ export class AppComponent {
     }
     return style;
 
+  }
+
+  onBackClicked(BackClick: boolean) {
+    if (BackClick === true){
+      this.isSystem = false;
+
+    }
   }
   
 

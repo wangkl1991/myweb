@@ -1,5 +1,5 @@
 <div *ngIf="isSystem">
-        <app-header [isLogin]="isLogin"></app-header>
+        <app-header [isLogin]="isLogin" (onBackClicked)="onBackClicked($event)"></app-header>
         <div style="min-height:80vh">
                 <router-outlet></router-outlet>
         </div>
