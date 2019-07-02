@@ -8,7 +8,6 @@ import { MaterialModule } from '../shared/modules/material/material.module';
 import { BlogComponent } from './blog.component';
 
 //routing
-
 import { BlogRoutingModule } from './blog.rougting';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogListComponent } from './blog-list/blog-list.component';

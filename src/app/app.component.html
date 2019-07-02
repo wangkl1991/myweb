@@ -3,32 +3,26 @@
         <div style="min-height:80vh">
                 <router-outlet></router-outlet>
         </div>
-
         <app-footer></app-footer>
 </div>
 
 
 
 <div *ngIf="!isSystem" id="frontPage" [ngStyle]="backgroundStyle">
-        <div style= "left:80%; position: absolute">
-                        <button mat-button (click)="frontPageClick()">Go to kailun's page</button>
+        <div style="left:80%; position: absolute">
+                <button mat-button (click)="frontPageClick()">Go to kailun's page</button>
         </div>
 
-        <!-- <mat-form-field>
-                        <textarea matInput placeholder="Search..." matTextareaAutosize matAutosizeMinRows="1" matAutosizeMaxRows="1" [(ngModel)]='searchStr'></textarea>
-                </mat-form-field> -->
         <div class="container" style="top:40%; left:5% ;position: absolute;">
                 <form>
                         <div class="form-group">
                                 <label for="name">content</label>
-                                <input type="text" class="form-control" id="content" required placeholder="Seach in Google" [(ngModel)]="searchStr" name="content">
+                                <input type="text" class="form-control" id="content" required
+                                        placeholder="Seach in Google" [(ngModel)]="searchStr" name="content">
                         </div>
                         <button type="submit" class="btn btn-success" (click)="clickMe()">Search</button>
-                        
+
                 </form>
 
         </div>
-
-
-
 </div>
