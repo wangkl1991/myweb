@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-//Components
+// Components
 import { AdminComponent } from './admin.component';
 import { UserTableComponent } from './user-table/user-table.component';
 import { AnalyticComponent } from './analytic/analytic.component';

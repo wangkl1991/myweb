@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import 'hammerjs';
 import { Subject } from 'rxjs/Subject';
 import { Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 
-//Service
+// Service
 import { SearchService } from './shared/services/search.service';
-import { Navigation } from 'selenium-webdriver';
 
 
 @Component({
@@ -15,7 +14,8 @@ import { Navigation } from 'selenium-webdriver';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit
+{
   searchStr: string;
 
   results: Object;
@@ -53,7 +53,6 @@ export class AppComponent {
   }
 
   clickMe() {
-    //this.router.navigateByUrl("http://www.google.com.hk/search?q="+ this.searchStr)
     window.location.href = "http://www.google.com.hk/search?q=" + this.searchStr;
 
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -11,9 +11,9 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 export class UploadPicComponent implements OnInit {
 
   @ViewChild('fileInput') fileInput: ElementRef;
-  form: FormGroup
+  form: FormGroup;
   isSelectedPic: boolean = false;
-  userPic: any
+  userPic: any;
   loading: boolean = false;
 
   constructor(
@@ -53,7 +53,7 @@ export class UploadPicComponent implements OnInit {
 
   private prepareSave(): any {
     let input = new FormData();
-    //input.append('name', this.form.get('name').value);
+    // input.append('name', this.form.get('name').value);
     input.append('avatar', this.form.get('avatar').value);
     return input;
   }

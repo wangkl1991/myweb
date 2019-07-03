@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/modules/material/material.module';
 
 
-//routing
+// routing
 import { UserRoutingModule } from './user.routing';
 
 import { EducationComponent } from './education/education.component';
@@ -22,16 +22,13 @@ import { UploadPicComponent } from '../shared/componenes/upload-pic/upload-pic.c
       ReactiveFormsModule,
       MaterialModule
     ],
-    providers: [
-      
-    ],
+    providers: [],
     declarations: [
     EducationComponent,
     EduTableComponent,
     ExperienceComponent,
     AlbumComponent,
-    UploadPicComponent
-    
+    UploadPicComponent    
     ]
   })
   export class UserModule { }

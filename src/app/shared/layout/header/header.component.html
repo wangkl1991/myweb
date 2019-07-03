@@ -1,10 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#303030;width: 100%; margin-bottom:0px;border-radius:0px">
   <a class="navbar-brand" style="font-weight:600" [routerLink]="['/home']">Kailun's website
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <mat-menu #appMenu2="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item [routerLink]="['/blog/bloglist']">Blog</button>
+    <button mat-menu-item (click)="backClick()">Go to the Search Page</button>
+  </mat-menu>
+  <button   mat-icon-button [matMenuTriggerFor]="appMenu2"class="navbar-toggler" type="button"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      
+    </span>
   </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+  
+<div class="collapse navbar-collapse"> 
   <ul class="nav navbar-nav mr-auto">
     <li class="nav-item" routerLinkActive="active-link">
       <a class="nav-link" [routerLink]="['/home']">Home
@@ -28,6 +36,7 @@
     </li>
 
   </ul>
+
   <ul  class="nav navbar-nav" style="float: right; padding-right:2%;color:white" >
     <mat-menu #appMenu="matMenu">
       <button mat-menu-item>Settings</button>

@@ -9,7 +9,6 @@ import { MatMenuTrigger } from '@angular/material';
 export class HeaderComponent implements OnInit {
   @Input() isLogin;
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
-
   @Output() onBackClicked = new EventEmitter<boolean>();
   BackClick = true;
  

@@ -9,20 +9,20 @@ declare interface CardInfos {
 }
 
 const  cardInfos: CardInfos[] = [{
-  name:'Education',
+  name: 'Education',
   path: "/user/education",
 },
 {
-  name:"Experience",
-  path:"/user/experience",
+  name: 'Experience',
+  path: "/user/experience",
 },
 {
-  name:"Your life",
-  path:"/blog/bloglist",
+  name: 'Your life',
+  path: '/blog/bloglist',
 },
 {
-  name:"Album",
-  path:"/user/album",
+  name: 'Album',
+  path: '/user/album',
 }
 
 ];
@@ -41,8 +41,7 @@ export class UserComponent implements OnInit {
   constructor(private tokenService: TokenServiceService) { }
 
   ngOnInit() {
-    this.userVar = this.tokenService.testVar
-    
+    this.userVar = this.tokenService.testVar    
   }
 
 }

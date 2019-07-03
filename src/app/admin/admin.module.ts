@@ -13,7 +13,7 @@ import { AnalyticComponent } from './analytic/analytic.component';
 
 
 
-//Service
+// Service
 import { ExcelService } from '../shared/services/excel.service';
 
 // import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
@@ -27,16 +27,13 @@ import { ExcelService } from '../shared/services/excel.service';
     BrowserAnimationsModule,
     FormsModule,
     MaterialModule,
-    AdminRoutingModule
-    
+    AdminRoutingModule    
   ],
   declarations: [
     AdminComponent,
     UserTableComponent,
     SideBarComponent,
-    AnalyticComponent,
-    
-   
+    AnalyticComponent,   
   ],
   providers: [
     ExcelService

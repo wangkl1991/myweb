@@ -24,11 +24,10 @@ export class BlogService {
 
 
   /**
-   * Get Offer
-   * @param offer
+   * Get Blogs
+   * @param filterParams
    */
   getBlogs(filterParams) {
-    debugger
     const body = JSON.stringify(filterParams);
     const headers = new Headers({ 'Content-Type': 'application/json' });
     return this.http.post(this.URL_FIND_BLOGS, body, { headers: headers })

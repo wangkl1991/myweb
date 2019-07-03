@@ -8,7 +8,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { AlbumComponent } from './album/album.component';
 
 
-//Router gurad
+// Router gurad
 
 
 
@@ -16,7 +16,7 @@ const routes: Routes = [
     {
         path: 'user',
         component: PrivateComponent,
-        children:[
+        children: [
             {path: 'education', component: EducationComponent},
             {path: 'experience', component: ExperienceComponent},
             {path: 'album', component: AlbumComponent}
