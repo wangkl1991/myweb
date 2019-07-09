@@ -9,10 +9,11 @@ import 'rxjs/add/operator/map';
 
 
 //Models
-import { User } from '../models/user';
+import { User } from '../shared/models/user';
 
 // Services
 import { HttpService } from '../shared/services/http.service';
+
 
 
 @Injectable()
